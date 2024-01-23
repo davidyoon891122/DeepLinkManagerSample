@@ -11,6 +11,13 @@
 		AD79C4A32B5F317A007ED45D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4A22B5F317A007ED45D /* ContentView.swift */; };
 		AD79C4A52B5F317A007ED45D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD79C4A42B5F317A007ED45D /* Assets.xcassets */; };
 		AD79C4A82B5F317A007ED45D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD79C4A72B5F317A007ED45D /* Preview Assets.xcassets */; };
+		AD79C4AF2B5F319A007ED45D /* Feature1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4AE2B5F319A007ED45D /* Feature1.swift */; };
+		AD79C4B12B5F31A1007ED45D /* Feature2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4B02B5F31A1007ED45D /* Feature2.swift */; };
+		AD79C4B32B5F31A7007ED45D /* Feature3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4B22B5F31A7007ED45D /* Feature3.swift */; };
+		AD79C4B52B5F325E007ED45D /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4B42B5F325E007ED45D /* DeepLinkManager.swift */; };
+		AD79C4B92B5F3359007ED45D /* DeepLinkManagerFeature1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4B82B5F3359007ED45D /* DeepLinkManagerFeature1.swift */; };
+		AD79C4BB2B5F33C7007ED45D /* DeepLinkManagerFeature2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4BA2B5F33C7007ED45D /* DeepLinkManagerFeature2.swift */; };
+		AD79C4BD2B5F3402007ED45D /* DeepLinkManagerFeature3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C4BC2B5F3402007ED45D /* DeepLinkManagerFeature3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		AD79C4A22B5F317A007ED45D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD79C4A42B5F317A007ED45D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD79C4A72B5F317A007ED45D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD79C4AE2B5F319A007ED45D /* Feature1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1.swift; sourceTree = "<group>"; };
+		AD79C4B02B5F31A1007ED45D /* Feature2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature2.swift; sourceTree = "<group>"; };
+		AD79C4B22B5F31A7007ED45D /* Feature3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3.swift; sourceTree = "<group>"; };
+		AD79C4B42B5F325E007ED45D /* DeepLinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
+		AD79C4B82B5F3359007ED45D /* DeepLinkManagerFeature1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManagerFeature1.swift; sourceTree = "<group>"; };
+		AD79C4BA2B5F33C7007ED45D /* DeepLinkManagerFeature2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManagerFeature2.swift; sourceTree = "<group>"; };
+		AD79C4BC2B5F3402007ED45D /* DeepLinkManagerFeature3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManagerFeature3.swift; sourceTree = "<group>"; };
+		AD79C4BE2B5F3637007ED45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +66,13 @@
 		AD79C49F2B5F317A007ED45D /* NavigationDeepLink */ = {
 			isa = PBXGroup;
 			children = (
+				AD79C4BE2B5F3637007ED45D /* Info.plist */,
 				AD79C4A02B5F317A007ED45D /* NavigationDeepLinkApp.swift */,
 				AD79C4A22B5F317A007ED45D /* ContentView.swift */,
 				AD79C4A42B5F317A007ED45D /* Assets.xcassets */,
 				AD79C4A62B5F317A007ED45D /* Preview Content */,
+				AD79C4B72B5F3340007ED45D /* Scene */,
+				AD79C4B62B5F3339007ED45D /* Manager */,
 			);
 			path = NavigationDeepLink;
 			sourceTree = "<group>";
@@ -65,6 +83,27 @@
 				AD79C4A72B5F317A007ED45D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD79C4B62B5F3339007ED45D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C4B42B5F325E007ED45D /* DeepLinkManager.swift */,
+				AD79C4B82B5F3359007ED45D /* DeepLinkManagerFeature1.swift */,
+				AD79C4BA2B5F33C7007ED45D /* DeepLinkManagerFeature2.swift */,
+				AD79C4BC2B5F3402007ED45D /* DeepLinkManagerFeature3.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AD79C4B72B5F3340007ED45D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C4AE2B5F319A007ED45D /* Feature1.swift */,
+				AD79C4B02B5F31A1007ED45D /* Feature2.swift */,
+				AD79C4B22B5F31A7007ED45D /* Feature3.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD79C4AF2B5F319A007ED45D /* Feature1.swift in Sources */,
 				AD79C4A32B5F317A007ED45D /* ContentView.swift in Sources */,
 				AD79C4A12B5F317A007ED45D /* NavigationDeepLinkApp.swift in Sources */,
+				AD79C4B12B5F31A1007ED45D /* Feature2.swift in Sources */,
+				AD79C4B32B5F31A7007ED45D /* Feature3.swift in Sources */,
+				AD79C4BB2B5F33C7007ED45D /* DeepLinkManagerFeature2.swift in Sources */,
+				AD79C4B92B5F3359007ED45D /* DeepLinkManagerFeature1.swift in Sources */,
+				AD79C4BD2B5F3402007ED45D /* DeepLinkManagerFeature3.swift in Sources */,
+				AD79C4B52B5F325E007ED45D /* DeepLinkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +321,7 @@
 				DEVELOPMENT_TEAM = HDFLLXK789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NavigationDeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +351,7 @@
 				DEVELOPMENT_TEAM = HDFLLXK789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NavigationDeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
